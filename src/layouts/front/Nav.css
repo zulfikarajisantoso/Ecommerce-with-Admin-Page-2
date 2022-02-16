@@ -1,0 +1,176 @@
+.navbarr{
+   margin-top: -80px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    position: sticky;
+    top: 0px;
+    z-index: 11;
+
+}
+.navbarr.active{
+    background: rgb(22, 7, 7);
+}
+.navcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  
+    max-width: 1500px;
+    
+
+}
+.navlof{
+    letter-spacing: 7px;
+    font-family: 'Bungee', cursive;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+  
+
+}
+.navmenu{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+  
+  
+
+}
+.nalinkk{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.3rem;
+    height: 100%;
+ 
+    font-family: 'Lato', sans-serif;
+    font-weight: 900; 
+}
+.nalink{
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    border: 3px solid transparent;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900; 
+}
+.navite{
+    margin-right: 3px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: -10px;
+
+}
+.navite::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, backgorund-color 0.5s ease;
+}
+.navite:hover::after{
+    width: 100%;
+    background: burlywood;
+}
+.navite .active{
+   border-bottom: 1px solid rgb(222, 184, 135) ;
+   background: transparent;
+   width: 0;
+
+}
+.vertikal{
+   
+    border: 1px white solid ;
+    height: 73px;
+    width: 0px;
+    margin-right: 10px;
+
+}
+.icomm{
+    display: none;
+}
+.akun{
+    margin-left: 10rem;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 960px){
+    .navmenu{
+        display: flex;     
+        flex-direction: column;
+        width:100%;
+        position: fixed;
+        top: 0px;
+        height: 100vh;
+        right: -110%;
+        opacity: 40;
+        z-index: 100;
+        
+    
+    }
+    .nalink{
+       font-size: 50px;
+       line-height: 2;
+    }
+   
+    
+    .navmenu.active {
+        background-color: rgba(70, 69, 68, 0.534);
+        right: 0px;
+        opacity: 1;
+        transition: all .5s ease;
+        z-index: 2;
+        word-spacing: 20rem;
+ 
+    }
+    .akun{
+      
+        display: block;
+        font-size: 40px;
+    }
+    .icomm{
+        color: rgb(255, 255, 255);
+        display: block;
+        z-index: 10;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transform: translate(-30%, -10%);
+        font-size: 30px;
+    }
+    .ca{
+        transform: translate(-300%, -10%);
+    }
+    .no{
+        transform: translate(-270%, -10%);
+        color: white;
+    }
+   .iccc{
+       width: 20px;
+       text-align: center;
+   }
+    .navite{
+        padding: 0.6rem;
+        display: table;
+        margin-bottom: 0px;
+
+    } 
+
+}
+@media screen and (min-width: 1280px){
+    .akun{
+        margin-left: 27rem;
+    }
+}
+
+
+
